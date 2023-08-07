@@ -1,5 +1,5 @@
 
-package Model;
+package com.Employee.employee.Model;
 
 import lombok.Data;
 

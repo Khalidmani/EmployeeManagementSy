@@ -1,8 +1,8 @@
-package Controller;
+package com.Employee.employee.Controller;
 
-import Exception2.ResourceNotFoundException;
-import Model.Employee;
-import Repository.EmployeeRepository;
+import com.Employee.employee.Exception2.ResourceNotFoundException;
+import com.Employee.employee.Model.Employee;
+import com.Employee.employee.Repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -36,7 +36,7 @@ public class EmployeeController {
         return ResponseEntity.ok(employee);
     }
 
-    @DeleteMapping("/employee/{id}")
+    @DeleteMapping("/Employee/{id}")
     public ResponseEntity<Map<String,Boolean>> deleteEmployee(@PathVariable int id)
     {
         Employee employee = employeeRepository.findById(id)
